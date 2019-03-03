@@ -1,0 +1,59 @@
+/*---------------------------------------------------Header*/
+.navbar {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+.logo {
+    margin-right: 50px;
+    padding: 20px 0px 20px 0px;
+}
+/*---------------------------------------------------Hero-Section*/
+.hero-section {
+    background-color: #000;
+}
+.hero {
+    position: relative;
+   /* background-color: #000;*/
+    height: 100vh;
+    display: flex;
+    
+}
+.hero h1 {
+    font-size: 72px;
+    color: #fff;
+}
+.d-md-flex.col-md-4.hero-backround /* floating image on hero background */ { 
+    position: absolute;
+    top:0;
+    right:0;
+    color: #fff;
+}
+.hero-backround img {
+    position: absolute;
+    top:30%;
+    right: 0;
+}
+.scroll-request {
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    margin-top: -100px;
+}
+/*---------------------------------------------------Media Queries*/
+@media screen and (max-width: 900px) {
+    .hero h1 {
+        font-size: 42px;
+    }
+}
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1600px;
+    }
+}
+@media (max-width: 767px) {
+    .hero {
+        align-content: center;
+    }
+}
