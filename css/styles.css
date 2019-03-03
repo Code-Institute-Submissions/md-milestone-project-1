@@ -6,8 +6,8 @@
     z-index: 1;
 }
 .logo {
-    margin-right: 50px;
-    padding: 20px 0px 20px 0px;
+    margin-right: 150px;
+    padding: 40px 10px 40px 10px;
 }
 /*---------------------------------------------------Hero-Section*/
 .hero-section {
@@ -40,6 +40,30 @@
     width: 100%;
     text-align: center;
     margin-top: -100px;
+}
+.hero-image  {
+    transition: all 1.7s ease-in-out;
+}
+.hero-image:hover {
+    transform: scale(0.9);
+    
+}
+/*---------------------------------------------------Footer*/
+footer {
+    background-color: #000;
+    margin:0;
+}
+.footer-socials {
+    margin-top: 40px;
+}
+.footer-socials i{
+    margin-right: 30px;
+    font-size: 28px;
+    color: #c7c7c7;
+    transition: all 0.5s ease-in-out;
+}
+.footer-socials i:hover {
+    color:#fff;
 }
 /*---------------------------------------------------Media Queries*/
 @media screen and (max-width: 900px) {
