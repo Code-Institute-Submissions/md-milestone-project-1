@@ -1,4 +1,10 @@
-/*---------------------------------------------------Header*/
+body {
+    background: #000;
+}
+h1,h2,h3,h4,h5,h6,p {
+    color: #fff;
+}
+/*--------------------------------------------Header*/
 .navbar {
     position: absolute;
     left: 0;
@@ -23,6 +29,7 @@
 .hero h1 {
     font-size: 72px;
     color: #fff;
+    text-shadow: 3px 3px 12px #000;
 }
 .d-md-flex.col-md-4.hero-backround /* floating image on hero background */ { 
     position: absolute;
@@ -32,8 +39,9 @@
 }
 .hero-backround img {
     position: absolute;
-    top:30%;
+    top:40%;
     right: 0;
+    height: 75vh;
 }
 .scroll-request {
     color: #fff;
@@ -45,13 +53,22 @@
     transition: all 1.7s ease-in-out;
 }
 .hero-image:hover {
-    transform: scale(0.9);
+    transform: scale(0.95);
     
+}
+/*---------------------------------------------------Team*/
+
+.team-wrap {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    height: auto;
+}
+.team-wrap p {
+    color: #b9b9b9;
 }
 /*---------------------------------------------------Footer*/
 footer {
     background-color: #000;
-    margin:0;
 }
 .footer-socials {
     margin-top: 40px;
