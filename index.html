@@ -7,10 +7,13 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./css/styles.css">
+    <!-- Gallery -->
+    <link rel="stylesheet" href="./css/lightboxgallery-min.css">
+    <!-- Gallery end-->
     <title>Document</title>
 </head>
 <body>
-    <header>
+    <header class="container">
             <nav class="navbar navbar-expand-md navbar-dark container-fluid">
                     <a class="navbar-brand logo" href="#">
                         <img src="assets/logo.png" alt="21W8Y"/>
@@ -19,7 +22,7 @@
                       <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="main-menu">
-                      <ul class="navbar-nav mr-auto">
+                      <ul class="navbar-nav ml-auto">
                         <li class="nav-item active">
                           <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                         </li>
@@ -49,15 +52,44 @@
     </section>
     <section class="container" id="work">
       <div class="row">
-        <div class="col-xs-12 col-md-2">
-          <h3>Work:</h3>
+        <div class="col-xs-12 col-md-3">
+          <h3 class="section-heading">Work:</h3>
         </div>
-        <div class="col-xs-12 col-md-10">GALLERY GOES HERE</div>
+        <div class="col-xs-12 col-md-9">
+
+                <div class="lightboxgallery-gallery clearfix">
+                  <a class="lightboxgallery-gallery-item " target="_blank" href="https://kawshar.github.io/lightboxgallery/rahul-anil.jpg" data-title="Rahul Anil" data-alt="Rahul Anil" data-desc="A lightweight jQuery lightbox gallery plugin.">
+                    <div class="gallery-item">
+                      <img src="https://kawshar.github.io/lightboxgallery/rahul-anil_thumb.jpg" title="Rahul Anil" alt="Rahul Anil">
+                      <div class="lightboxgallery-gallery-item-content">
+                        <span class="lightboxgallery-gallery-item-title">Rahul Anil</span>
+                      </div>
+                    </div>
+                  </a>
+                  <a class="lightboxgallery-gallery-item " target="_blank" href="https://kawshar.github.io/lightboxgallery/rahul-anil.jpg" data-title="Rahul Anil" data-alt="Rahul Anil" data-desc="A lightweight jQuery lightbox gallery plugin.">
+                    <div class="gallery-item">
+                      <img src="https://kawshar.github.io/lightboxgallery/rahul-anil_thumb.jpg" title="Rahul Anil" alt="Rahul Anil">
+                      <div class="lightboxgallery-gallery-item-content">
+                        <span class="lightboxgallery-gallery-item-title">Rahul Anil</span>
+                      </div>
+                    </div>
+                  </a>
+                  <a class="lightboxgallery-gallery-item " target="_blank" href="https://kawshar.github.io/lightboxgallery/rahul-anil.jpg" data-title="Rahul Anil" data-alt="Rahul Anil" data-desc="A lightweight jQuery lightbox gallery plugin.">
+                    <div class="gallery-item">
+                      <img src="https://kawshar.github.io/lightboxgallery/rahul-anil_thumb.jpg" title="Rahul Anil" alt="Rahul Anil">
+                      <div class="lightboxgallery-gallery-item-content">
+                        <span class="lightboxgallery-gallery-item-title">Rahul Anil</span>
+                      </div>
+                    </div>
+                  </a>
+              </div>  
+
+        </div>
       </div>
     </section>
     <section class="container" id="team">
       <div class="row team-wrap">
-        <div class="col-xs-12 col-md-3"><h3>Our Team:</h3></div>
+        <div class="col-xs-12 col-md-3"><h3 class="section-heading">Our Team:</h3></div>
         <div class="col-xs-12 col-md-3">
           <h2>Mateusz Delegacz</h2>
           <p>Lorem ipsum dolor sit amet, ex suas alia vim, 
@@ -90,14 +122,14 @@
         </div>
       </div>
     </section>
-    <footer class="container-fluid">
+    <footer class="container">
       <div class="row">
-        <div class="d-none d-md-flex col-md-8">
+        <div class="d-none d-md-flex col-md-4">
           <a href="index.html" class="logo">
             <img src="assets/logo.png" alt="21W8Y"/>
           </a>
         </div>
-        <div class="col-xs-12 col-md-4 footer-socials">
+        <div class="col-xs-12 col-md-8 footer-socials">
           <ul class="list-inline">
             <li class="list-inline-item">
               <a href="https://dribbble.com/iled" target="_blank"><i class="fa fa-dribbble"></i></a>
@@ -115,8 +147,30 @@
         </div>
       </div>
     </footer>
+    <script type="text/javascript"> 
+			
+			jQuery(document).ready(function(){ 
+				jQuery("#gallery").unitegallery(); 
+			}); 
+		
+		</script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>   
-</body>
+    <!-- Gallery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="./js/lightboxgallery-min.js"></script>
+  <script type="text/javascript">
+  jQuery(function($) {
+    $(document).on('click', '.lightboxgallery-gallery-item', function(event) {
+      event.preventDefault();
+      $(this).lightboxgallery({
+        showCounter: true,
+        showTitle: true,
+        showDescription: true
+      });
+    });
+  });
+  </script>
+  </body>
 </html>

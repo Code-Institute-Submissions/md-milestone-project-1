@@ -4,9 +4,12 @@ body {
 h1,h2,h3,h4,h5,h6,p {
     color: #fff;
 }
+.section-heading {
+    margin-bottom: 50px;
+}
 /*--------------------------------------------Header*/
 .navbar {
-    position: absolute;
+    /*position: absolute;*/
     left: 0;
     top: 0;
     z-index: 1;
@@ -14,6 +17,15 @@ h1,h2,h3,h4,h5,h6,p {
 .logo {
     margin-right: 150px;
     padding: 40px 10px 40px 10px;
+    margin: 0 auto;
+}
+.navbar-dark .navbar-toggler {
+    margin: 0 auto;
+    border: none;
+    color: #fff;
+}
+.navbar-dark .navbar-nav .nav-link {
+    text-align: center;
 }
 /*---------------------------------------------------Hero-Section*/
 .hero-section {
@@ -22,14 +34,16 @@ h1,h2,h3,h4,h5,h6,p {
 .hero {
     position: relative;
    /* background-color: #000;*/
-    height: 100vh;
+    height: 88vh;
     display: flex;
+    
     
 }
 .hero h1 {
-    font-size: 72px;
+    font-size: 24px;
     color: #fff;
     text-shadow: 3px 3px 12px #000;
+    margin-top: 60px;
 }
 .d-md-flex.col-md-4.hero-backround /* floating image on hero background */ { 
     position: absolute;
@@ -39,7 +53,7 @@ h1,h2,h3,h4,h5,h6,p {
 }
 .hero-backround img {
     position: absolute;
-    top:40%;
+    top:2%;
     right: 0;
     height: 75vh;
 }
@@ -72,9 +86,10 @@ footer {
 }
 .footer-socials {
     margin-top: 40px;
+    text-align: center;
 }
 .footer-socials i{
-    margin-right: 30px;
+    padding: 0px 15px 0px 15px;
     font-size: 28px;
     color: #c7c7c7;
     transition: all 0.5s ease-in-out;
@@ -82,19 +97,49 @@ footer {
 .footer-socials i:hover {
     color:#fff;
 }
-/*---------------------------------------------------Media Queries*/
-@media screen and (max-width: 900px) {
+footer .logo {
+    margin-left: 0;
+}
+/*---------------------------------------------------Gallery*/
+.gallery-item {
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+}
+.gallery-item img {
+    width: 100%;
+}
+/*---------------------------------------------------Media Queries */
+@media (min-width: 768px) {
+    .hero {
+        align-content: unset; 
+    }
     .hero h1 {
-        font-size: 42px;
+        font-size: 48px;
+        margin-top: 0;
+    }
+    .footer-socials {
+        text-align: right;
+    }
+}
+@media (min-width: 992px) {
+    .hero h1 {
+        font-size: 52px;
+    }
+}
+@media (min-width: 1199px) {
+    .gallery-item {
+        width: 100%;
     }
 }
 @media (min-width: 1200px) {
+    .hero h1 {
+        font-size: 72px;
+    }
     .container {
         max-width: 1600px;
     }
-}
-@media (max-width: 767px) {
-    .hero {
-        align-content: center;
+    .gallery-item {
+        width: 33%;
     }
 }
