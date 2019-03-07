@@ -102,6 +102,7 @@ footer .logo {
 }
 /*---------------------------------------------------Gallery*/
 .gallery-item {
+    position: relative;
     display: inline-block;
     text-align: center;
     width: 100%;
@@ -109,6 +110,64 @@ footer .logo {
 .gallery-item img {
     width: 100%;
 }
+
+.lightboxgallery-gallery-item > div:after {
+  content: " ";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 1;
+  background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,.3) 100%);
+  background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,.3) 100%);
+  background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,.3) 100%);
+  opacity: 0;
+  -webkit-transition: opacity 400ms;
+  transition: opacity 400ms;
+}
+
+.lightboxgallery-gallery-item:hover > div:after {
+  opacity: 1;
+}
+
+.gallery-item .lightboxgallery-gallery-item-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 10px;
+  z-index: 2;
+  opacity: 0;
+  -webkit-transition: opacity 400ms;
+  transition: opacity 400ms;
+}
+
+.lightboxgallery-gallery-item:hover .lightboxgallery-gallery-item-content {
+  opacity: 1;
+}
+
+.lightboxgallery-gallery-item-title {
+  display: inline-block;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  font-size: 13px;
+  line-height: 1.2;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+/*---------------------------------------------------How we Work*/
+.step-number {
+    
+}
+.step-text {
+    margin-top: 30px;
+    border-top: solid 2px #fff;
+    padding-top: 20px;
+}
+
+
 /*---------------------------------------------------Media Queries */
 @media (min-width: 768px) {
     .hero {
