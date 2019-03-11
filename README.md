@@ -4,3 +4,4 @@ Code used:
 
 Technologies used:
         Bootstrap 4.1 CSS and jQurey
+        jQuery Gallery used: https://github.com/kawshar/lightboxgallery

@@ -36,8 +36,7 @@ h1,h2,h3,h4,h5,h6,p {
    /* background-color: #000;*/
     height: 88vh;
     display: flex;
-    
-    
+  
 }
 .hero h1 {
     font-size: 24px;
@@ -71,7 +70,6 @@ h1,h2,h3,h4,h5,h6,p {
     
 }
 /*---------------------------------------------------Team*/
-
 .team-wrap {
     padding-top: 50px;
     padding-bottom: 50px;
@@ -100,17 +98,21 @@ footer {
 footer .logo {
     margin-left: 0;
 }
+/*---------------------------------------------------Work*/
+#work {
+    margin-bottom: 50px;
+}
 /*---------------------------------------------------Gallery*/
 .gallery-item {
     position: relative;
     display: inline-block;
     text-align: center;
     width: 100%;
+    margin-bottom: 10px;
 }
 .gallery-item img {
     width: 100%;
 }
-
 .lightboxgallery-gallery-item > div:after {
   content: " ";
   position: absolute;
@@ -126,11 +128,9 @@ footer .logo {
   -webkit-transition: opacity 400ms;
   transition: opacity 400ms;
 }
-
 .lightboxgallery-gallery-item:hover > div:after {
   opacity: 1;
 }
-
 .gallery-item .lightboxgallery-gallery-item-content {
   position: absolute;
   bottom: 0;
@@ -142,7 +142,6 @@ footer .logo {
   -webkit-transition: opacity 400ms;
   transition: opacity 400ms;
 }
-
 .lightboxgallery-gallery-item:hover .lightboxgallery-gallery-item-content {
   opacity: 1;
 }
@@ -165,9 +164,8 @@ footer .logo {
     margin-top: 30px;
     border-top: solid 2px #fff;
     padding-top: 20px;
+    color: #b9b9b9;
 }
-
-
 /*---------------------------------------------------Media Queries */
 @media (min-width: 768px) {
     .hero {
@@ -201,4 +199,22 @@ footer .logo {
     .gallery-item {
         width: 33%;
     }
+    #work, #team, #how-we-work {
+        padding: 100px 0 100px 0;
+    }
+}
+.backTopwrap {
+    position: absolute;
+}
+.back-to-top {
+    cursor: pointer;
+    position: fixed;
+    bottom: 70px;
+    right: 20px;
+    display:none;
+    background-color: #2a2e41;
+    color: #ff0060;
+}
+.back-to-top:hover{
+    color: #fff;
 }

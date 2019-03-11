@@ -4,15 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" type="image/png" href="assets/favicon.png"/>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/lightboxgallery-min.css">
     <link rel="stylesheet" href="./css/styles.css">
     <!-- Gallery -->
-    <link rel="stylesheet" href="./css/lightboxgallery-min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="./js/lightboxgallery-min.js"></script>
     <!-- Gallery end-->
     <title>Document</title>
 </head>
 <body>
+
     <header class="container">
             <nav class="navbar navbar-expand-md navbar-dark container-fluid">
                     <a class="navbar-brand logo" href="#">
@@ -24,16 +29,16 @@
                     <div class="collapse navbar-collapse" id="main-menu">
                       <ul class="navbar-nav ml-auto">
                         <li class="nav-item active">
-                          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                          <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link" href="#">Work</a>
+                          <a class="nav-link" href="#work">Work</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">How We Work</a>
+                            <a class="nav-link" href="#how-we-work">How We Work</a>
                           </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Team</a>
+                            <a class="nav-link" href="#team">Team</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Contact</a>
@@ -42,7 +47,8 @@
                     </div>
                   </nav> 
     </header>
-    <section class="container-fluid hero-section" id="home">
+
+     <section class="container-fluid hero-section" id="home">
         <div class="container">
             <div class="row hero">
                 <div class="d-none d-sm-none d-md-flex col-md-12 hero-backround">
@@ -95,27 +101,27 @@
         </div>
       </div>
     </section>
-    <section class="container">
+    <section class="container" id="how-we-work">
       <div class="row">
         <div class="col-xs-12 col-md-3"><h3 class="section-heading">How We Work:</h3></div>
         <div class="col-xs-12 col-md-9">
-            <div class="row">
-                <div class="step-element col-11 col-md-4">
-                    <h1 class="step-number">1</h1>
-                    <p class="step-text">
-                      Lorem ipsum ciekawe rzeczy kilka linijek takie
-                      tam i inne rzeczy rowee nalesnik
-                    </p>
-                  </div>
-                  <div class="step-element col-11 col-md-4">
-                      <h1 class="step-number">2</h1>
+          <div class="row">
+            <div class="step-element col-11 col-md-4">
+              <h1 class="step-number">1. We talk</h1>
+              <p class="step-text">
+                Lorem ipsum ciekawe rzeczy kilka linijek takie
+                tam i inne rzeczy rowee nalesnik
+             </p>
+            </div>
+            <div class="step-element col-11 col-md-4">
+                      <h1 class="step-number">2. We Plan</h1>
                       <p class="step-text">
                         Lorem ipsum ciekawe rzeczy kilka linijek takie
                         tam i inne rzeczy rowee nalesnik
                       </p>
-                    </div>
+            </div>
                     <div class="step-element col-11 col-md-4">
-                        <h1 class="step-number">3</h1>
+                        <h1 class="step-number">3. We shoot</h1>
                         <p class="step-text">
                           Lorem ipsum ciekawe rzeczy kilka linijek takie
                           tam i inne rzeczy rowee nalesnik
@@ -161,6 +167,9 @@
         </div>
       </div>
     </section>
+    <div class="container-fluid backTopwrap">
+    <a id="back-to-top" href="#" class="btn btn-lg back-to-top" role="button" title="Click to return on the top page" data-toggle="tooltip" data-placement="left"><span class="glyphicon glyphicon-chevron-up">Back to top</span></a>
+    </div>
     <footer class="container">
       <div class="row">
         <div class="d-none d-md-flex col-md-4">
@@ -186,19 +195,17 @@
         </div>
       </div>
     </footer>
+
     <script type="text/javascript"> 
 			
-			jQuery(document).ready(function(){ 
-				jQuery("#gallery").unitegallery(); 
-			}); 
 		
-		</script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		
+    </script>
+    <!---->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>   
     <!-- Gallery-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="./js/lightboxgallery-min.js"></script>
+    
   <script type="text/javascript">
   jQuery(function($) {
     $(document).on('click', '.lightboxgallery-gallery-item', function(event) {
@@ -211,5 +218,38 @@
     });
   });
   </script>
+  
+  <script>
+  $(document).on('click', 'a[href^="#"]', function(event) {
+  event.preventDefault();
+
+  $('html, body').animate({
+    scrollTop: $($.attr(this, 'href')).offset().top
+  }, 500);
+});
+  </script>
+
+  <script>
+  $(document).ready(function(){
+     $(window).scroll(function () {
+            if ($(this).scrollTop() > 50) {
+                $('#back-to-top').fadeIn();
+            } else {
+                $('#back-to-top').fadeOut();
+            }
+        });
+        // scroll body to 0px on click
+        $('#back-to-top').click(function () {
+            $('#back-to-top').tooltip('hide');
+            $('body,html').animate({
+                scrollTop: 0
+            }, 800);
+            return false;
+        });
+        
+        $('#back-to-top').tooltip('show');
+
+});
+</script>
   </body>
 </html>
