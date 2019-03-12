@@ -69,35 +69,6 @@ h1,h2,h3,h4,h5,h6,p {
     transform: scale(0.95);
     
 }
-/*---------------------------------------------------Team*/
-.team-wrap {
-    padding-top: 50px;
-    padding-bottom: 50px;
-    height: auto;
-}
-.team-wrap p {
-    color: #b9b9b9;
-}
-/*---------------------------------------------------Footer*/
-footer {
-    background-color: #000;
-}
-.footer-socials {
-    margin-top: 40px;
-    text-align: center;
-}
-.footer-socials i{
-    padding: 0px 15px 0px 15px;
-    font-size: 28px;
-    color: #c7c7c7;
-    transition: all 0.5s ease-in-out;
-}
-.footer-socials i:hover {
-    color:#fff;
-}
-footer .logo {
-    margin-left: 0;
-}
 /*---------------------------------------------------Work*/
 #work {
     margin-bottom: 50px;
@@ -166,6 +137,92 @@ footer .logo {
     padding-top: 20px;
     color: #b9b9b9;
 }
+/*---------------------------------------------------Team*/
+.team-wrap {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    height: auto;
+}
+.team-wrap p {
+    color: #b9b9b9;
+}
+/*---------------------------------------------------Footer*/
+footer {
+    background-color: #000;
+}
+.footer-socials {
+    margin-top: 40px;
+    text-align: center;
+}
+.footer-socials i{
+    padding: 0px 15px 0px 15px;
+    font-size: 28px;
+    color: #c7c7c7;
+    transition: all 0.5s ease-in-out;
+}
+.footer-socials i:hover {
+    color:#fff;
+}
+footer .logo {
+    margin-left: 12px;
+}
+/*---------------------------------------------------Back to top*/
+.backTopwrap {
+    position: absolute;
+}
+.back-to-top {
+    width: 100%;
+    cursor: pointer;
+    position: fixed;
+    bottom: 60px;
+    right: 0px;
+    display:none;
+    background-color: #363636;
+    color: rgb(209, 209, 209);
+    border-radius: 0;
+}
+/*---------------------------------------------------Contact */
+#contact {
+    padding: 100px 0 100px 0;
+    margin-left: 15px;
+}
+#contact label {
+    color: #c7c7c7;
+}
+#contact input, #contact textarea {
+    border-radius: 0;
+    background-color: #000;
+}
+.contact-content, {
+   /* padding: 12px; */
+}
+.contact-content p {
+    color: #c7c7c7;
+}
+.form-control {
+    color: #c7c7c7;
+}
+.form-control:focus {
+    color: #c7c7c7;
+}
+.contact-form h2 {
+    margin-bottom: 30px;
+}
+.btn-contact {
+    border: 1px solid #fff;
+    background: #000;
+    border-radius: 0;
+}
+.contact-content-sucess {
+    padding: 80px 0 80px 0;
+    height: 50vh;
+}
+.form-group {
+    padding-right: 15px;
+}
+.form-group .col-sm-10, .form-group .col-sm-2 {
+    padding-left: 0 !important;
+}
 /*---------------------------------------------------Media Queries */
 @media (min-width: 768px) {
     .hero {
@@ -177,6 +234,18 @@ footer .logo {
     }
     .footer-socials {
         text-align: right;
+    }
+    .back-to-top {
+        width: 100px;
+        cursor: pointer;
+        position: fixed;
+        right: 5px;
+        bottom: 120px;
+        display:none;
+        background-color: #363636;
+        color: rgb(209, 209, 209);
+        border-radius: 0;
+        font-size: 12px;
     }
 }
 @media (min-width: 992px) {
@@ -203,18 +272,8 @@ footer .logo {
         padding: 100px 0 100px 0;
     }
 }
-.backTopwrap {
-    position: absolute;
-}
-.back-to-top {
-    cursor: pointer;
-    position: fixed;
-    bottom: 70px;
-    right: 20px;
-    display:none;
-    background-color: #2a2e41;
-    color: #ff0060;
-}
-.back-to-top:hover{
-    color: #fff;
-}
+
+
+
+
+

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" type="image/png" href="assets/favicon.png" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/lightboxgallery-min.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <!-- Gallery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="./js/lightboxgallery-min.js"></script>
+    <!-- Gallery end-->
+    <title>Document</title>
+</head>
+
+<body>
+
+    <header class="container">
+        <nav class="navbar navbar-expand-md navbar-dark container-fluid">
+            <a class="navbar-brand logo" href="#">
+                <img src="assets/logo.png" alt="21W8Y" />
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-menu"
+                aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="main-menu">
+                <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html#work">Work</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html#how-we-work">How We Work</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html#team">Team</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="contact.html">Contact</a>
+                            </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <section class="container" id="contact">
+            <div class="row">
+                    <div class="empspace d-none d-sm-none d-md-flex col-md-3">
+                        
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-9">
+                        <div class="contact-content contact-content-sucess">
+                        <h3>Thank you stranger</h3>
+                        <p>We got for email, you should hear back from us in the next 24h</p>
+                        </div>
+                </div>
+           
+    </section>
+    <footer class="container">
+        <div class="row">
+            <div class="d-none d-md-flex col-md-4">
+                <a href="index.html" class="logo">
+                    <img src="assets/logo.png" alt="21W8Y" />
+                </a>
+            </div>
+            <div class="col-xs-12 col-md-8 footer-socials">
+                <ul class="list-inline">
+                    <li class="list-inline-item">
+                        <a href="https://dribbble.com/iled" target="_blank"><i class="fa fa-dribbble"></i></a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="https://www.instagram.com/deli_/" target="_blank"><i class="fa fa-instagram"></i></a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="https://twitter.com/delegacz" target="_blank"><i class="fa fa-twitter"></i></a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="https://unsplash.com/@21w8y" target="_blank"><i class="fa fa-camera"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <!---->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <!-- Gallery-->
+
+    <script type="text/javascript">
+        jQuery(function ($) {
+            $(document).on('click', '.lightboxgallery-gallery-item', function (event) {
+                event.preventDefault();
+                $(this).lightboxgallery({
+                    showCounter: true,
+                    showTitle: true,
+                    showDescription: true
+                });
+            });
+        });
+    </script>
+
+    <script>
+        $(document).on('click', 'a[href^="#"]', function (event) {
+            event.preventDefault();
+
+            $('html, body').animate({
+                scrollTop: $($.attr(this, 'href')).offset().top
+            }, 500);
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 50) {
+                    $('#back-to-top').fadeIn();
+                } else {
+                    $('#back-to-top').fadeOut();
+                }
+            });
+            // scroll body to 0px on click
+            $('#back-to-top').click(function () {
+                $('#back-to-top').tooltip('hide');
+                $('body,html').animate({
+                    scrollTop: 0
+                }, 800);
+                return false;
+            });
+
+            $('#back-to-top').tooltip('show');
+
+        });
+    </script>
+</body>
+
+</html>
