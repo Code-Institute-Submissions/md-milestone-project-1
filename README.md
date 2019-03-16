@@ -1,6 +1,6 @@
-#21W8Y - Photography Creative Agancey - Responsive Website - Code Institute Milestone Project 1
+# 21W8Y - Photography Creative Agancey - Responsive Website - Code Institute Milestone Project 1
 
-##What does it do and what need does it fulfil?
+## What does it do and what need does it fulfil?
 
 This project is mobile-first responsive website for 21W8Y Creative Photography Company
 It fulfils the need for potential clients to get familiar with comapnys work, team, process and also enquire through a contact form about the project.
