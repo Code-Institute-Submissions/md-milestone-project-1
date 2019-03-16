@@ -1,9 +1,32 @@
+@import url('https://rsms.me/inter/inter.css');
+html { font-family: 'Inter', sans-serif; }
+@supports (font-variation-settings: normal) {
+  html { font-family: 'Inter var', sans-serif; }
+}   
+
 body {
     background: #000;
 }
 h1,h2,h3,h4,h5,h6,p {
     color: #fff;
+    font-family: 'Inter',sans-serif;
 }
+h1 {
+    font-weight: 600;
+}
+h2 {
+    font-weight: 500;
+}
+h3 {
+    font-weight: 400;
+}
+h4 {
+    font-weight: 300;
+}
+p,a {
+    font-weight: 100;
+}
+
 .section-heading {
     margin-bottom: 50px;
 }
@@ -80,6 +103,7 @@ h1,h2,h3,h4,h5,h6,p {
     text-align: center;
     width: 100%;
     margin-bottom: 10px;
+    z-index: 0;
 }
 .gallery-item img {
     width: 100%;
@@ -166,6 +190,7 @@ footer .logo {
 /*---------------------------------------------------Back to top*/
 .backTopwrap {
     position: absolute;
+    z-index: 99;
 }
 .back-to-top {
     width: 100%;
@@ -250,6 +275,7 @@ footer .logo {
 @media (min-width: 1199px) {
     .gallery-item {
         width: 100%;
+        
     }
 }
 @media (min-width: 1200px) {
