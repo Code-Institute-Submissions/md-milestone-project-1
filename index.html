@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,22 +9,16 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="./css/lightboxgallery-min.css">
   <link rel="stylesheet" href="./css/styles.css">
-  <!-- Gallery -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
     crossorigin="anonymous"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="./js/lightboxgallery-min.js"></script>
-  <!-- Gallery end-->
-  <title>Document</title>
+  <title>21W8Y - Creative Photography Agency</title>
 </head>
-
 <body>
-
   <header class="container">
-    
     <nav class="navbar navbar-expand-md navbar-dark ">
-     
       <a class="navbar-brand logo" href="#">
         <img src="assets/logo.png" alt="21W8Y" />
       </a>
@@ -78,7 +71,6 @@
         <h3 class="section-heading">Work:</h3>
       </div>
       <div class="col-xs-12 col-md-9">
-
         <div class="lightboxgallery-gallery clearfix">
           <a class="lightboxgallery-gallery-item " target="_blank" href="./assets/mateusz-delegacz-417770-unsplash.jpg"
             data-title="London" data-alt="Rahul Anil" data-desc="">
@@ -138,7 +130,6 @@
               You know, the magic, press of the big button. But we talk and planned so You are gonna be happy, so are we
               when you pay the invoice on time.</p>
           </div>
-
         </div>
       </div>
     </div>
@@ -189,14 +180,12 @@
       </div>
     </div>
   </footer>
-  <!---->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
     integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
     crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
-  <!-- Gallery-->
   <script type="text/javascript">
     jQuery(function ($) {
       $(document).on('click', '.lightboxgallery-gallery-item', function (event) {
@@ -209,7 +198,6 @@
       });
     });
   </script>
-  
   <script>
     $(document).on('click', '.navbar a[href^="#"]', function (event) {
       event.preventDefault();
@@ -219,7 +207,6 @@
       }, 500);
     });
   </script>
-
   <script>
     $(document).ready(function () {
       $(window).scroll(function () {
@@ -229,17 +216,12 @@
           $('#back-to-top').fadeOut();
         }
       });
-      // scroll body to 0px on click
       $('#back-to-top').click(function () {
-       /* $('#back-to-top').tooltip('hide');*/
         $('body,html').animate({
           scrollTop: 0
         }, 800);
         return false;
       });
-
-      /*$('#back-to-top').tooltip('show');*/
-
     });
   </script>
 </body>
