@@ -264,8 +264,6 @@ footer .logo {
         border-radius: 0;
         font-size: 12px;
     }
-}
-@media (min-width: 768px) {
     .section-heading {
         padding-left: 25px;
     }

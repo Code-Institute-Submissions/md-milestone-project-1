@@ -42,6 +42,7 @@ The website uses mobile-first design and is fully responsive. It's mosty a one p
 Mobile-first responsiveness was tested on all available resolutions/devices in Google Dev tools. It was also tested on 2 separate devices iPhone X, and iPhone XR. Contact Forms validation and functionality was tested and reported working correctly.
 All of the links are connected and social links are opening in new tabs.
 All tests were conducted 2 times once locally and remotely on Github Pages.
+Code as validated using [W3.org](https://validator.w3.org/nu/?doc=https%3A%2F%2Fdelegacz.github.io%2Fmd-milestone-project-1%2Findex.html)
 
 
 ### Bugs
