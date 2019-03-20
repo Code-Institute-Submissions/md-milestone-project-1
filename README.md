@@ -6,7 +6,7 @@ This project is a mobile-first, responsive website for 21W8Y Creative Photograph
 
 ## UX
 
-[UX Documentation](https://www.figma.com/proto/SQ2KrW652jyEjfDJc4JcxaC6/Untitled?node-id=1%3A2&scaling=min-zoom&redirected=1)
+[UX Documentation](https://www.figma.com/file/SQ2KrW652jyEjfDJc4JcxaC6/Untitled?node-id=1%3A2)
 
 ## Features
 
