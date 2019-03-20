@@ -6,12 +6,11 @@ This project is a mobile-first, responsive website for 21W8Y Creative Photograph
 
 ## UX
 
-[UX Documentation](https://www.figma.com/file/SQ2KrW652jyEjfDJc4JcxaC6/Untitled?node-id=1%3A2)
+[UX Documentation](https://www.figma.com/proto/SQ2KrW652jyEjfDJc4JcxaC6/Untitled?node-id=1%3A2&scaling=min-zoom&redirected=1)
 
 ## Features
 
 The website uses mobile-first design and is fully responsive. It's mosty a one page design. The first section (Hero) of the website displays an interactive photo on larger screen sizes. Navigation is functional and uses Bootstraps JavaScript for displaying navigation as a hamburger menu on smaller screen sizes. The website uses [lighboxgallery](https://github.com/kawshar/lightboxgallery) for displaying portfolio as a gallery with a lightbox. The website uses custom JavaScript to provide users with 'Go back to top' button [Source](https://www.w3schools.com/howto/howto_js_scroll_to_top.asp). The Website uses javascript for smooth animation on auto-scroll from navigation [Source](https://stackoverflow.com/questions/50709873/smooth-scroll-for-link-with-anchor) (*modified for purposes of this project). This website also provides users with: (for now) not functional contact form. Contact form provides validation and feedback on interaction.                       
-
 ### Existing Features   
 - Contact Form - allows users to contact the agency via email, by having them filling out the contact form on /contact.html
 - Back to top button - allows users to go back to the top of the page when using one-page navigation
@@ -41,8 +40,8 @@ The website uses mobile-first design and is fully responsive. It's mosty a one p
 ## Testing
 
 Mobile-first responsiveness was tested on all available resolutions/devices in Google Dev tools. It was also tested on 2 separate devices iPhone X, and iPhone XR. Contact Forms validation and functionality was tested and reported working correctly.
-All the links are connected and social links are opening in new tabs.
-All tests were conducted 2 times once locally and on Github Pages.
+All of the links are connected and social links are opening in new tabs.
+All tests were conducted 2 times once locally and remotely on Github Pages.
 
 
 ### Bugs
@@ -59,15 +58,15 @@ All tests were conducted 2 times once locally and on Github Pages.
 
 ## Deployment
 
-The project was developed locally using Microsoft VisualCode, Git was used for version control and backup. It was then pushed to remote depository and published to Git Pages through bash.
+The project was developed locally using Microsoft VisualCode. Git was used for version control and backup. It was then pushed to remote depository and published to Git Pages through bash.
 
 ### Credits
 
 ## Content
-- Copy is written by me: inspired by [Ueno](https://ueno.co) 
+- Copy was written by me. Inspired by [Ueno](https://ueno.co) 
 
 ## Media
-- All phots are mine and can be downloaded for free via [Unsplash](https://unsplash.com/@21w8y)
+- All phots are mine and can be downloaded for free, via [Unsplash](https://unsplash.com/@21w8y)
    
 ## Acknowledgements
 
